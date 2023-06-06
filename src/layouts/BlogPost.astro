@@ -7,9 +7,16 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
-type Props = CollectionEntry<'posts'>['data'];
+export interface Props {
+  title: string,
+  description: string,
+  createdAt?: string,
+  updatedAt?: string,
+  heroImage?: string,
+  tags: string[]
+}
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {title, description, heroImage} = Astro.props;
 ---
 
 <!DOCTYPE html>

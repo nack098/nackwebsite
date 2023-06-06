@@ -14,7 +14,7 @@ const getData = async () => {
   try{
   const blob = await getCollection('posts')
   const value = blob.sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+    (a, b) => a.data.createdAt.valueOf() - b.data.createdAt.valueOf()
   );
   return value
   }catch{
@@ -37,7 +37,7 @@ const posts = await getData()
       <Masterhead />
       <Content>
         <section>
-          <p class="mb-8 indent-4">
+          <p class="mb-4 indent-4">
           Hi, Welcome to my blog I&apos;m Nakuya which is from "Nack" reading in Japanese style and
           "Ya". You can call me Nack if you want. I&apos;m an indie developer which
           spending most of my time writing code. I like to learn new thing such as new
@@ -51,7 +51,7 @@ const posts = await getData()
         </section>
         <section>
           {posts.length>0?
-            <h1 class="font-bold font-poppins text-xl">Blog list</h1>
+            <h1 class="font-bold font-poppins text-xl mb-4">Blog list</h1>
               <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {
                     posts.map(post => (
