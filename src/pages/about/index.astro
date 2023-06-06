@@ -5,7 +5,7 @@ import Masterhead from '../../components/Masterhead.astro';
 import Body from '../../components/Body.astro';
 import Footer from '../../components/Footer.astro';
 import Content from '../../components/Content.astro';
-import { IoArrowForward } from 'react-icons/io5';
+import { IoArrowForward, IoLogoInstagram, IoMailOutline } from 'react-icons/io5';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 ---
 
@@ -19,7 +19,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 		<main class="pt-[56px]">
       <Content>
         <div class="mb-8">
-          <img src="../../../public/placeholder-hero.jpg" class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={720} height={360} alt="" /> 
+          <img src="/placeholder-hero.jpg" class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={720} height={360} alt="" /> 
         </div>
         <section>
           <p class="mb-4 indent-4">
@@ -31,6 +31,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
             Personally, I think coding isn't hard because it's just a logic and different language mean different syntax so I think learning new languages are 
             easy for me. Just give me order. I can do it!!!
           </p>
+        </section>
+        <section>
+          <h1 class="font-bold font-poppins text-xl mb-4">Contacts</h1>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <li class="mb-4">
+              <p>Instagram</p>
+              <a href="https://www.instagram.com/sticknack/" class="inline-flex items-center gap-1 indent-1 text-blue-500"><IoLogoInstagram />sticknack</a>
+            </li>
+            <li class="mb-4">
+              <p>Email</p>
+              <p class="inline-flex items-center gap-1 indent-1 text-blue-500"><IoMailOutline />nack098gamer@gmail.com</p>
+            </li>
+          </ul>
         </section>
       </Content>
 		</main>

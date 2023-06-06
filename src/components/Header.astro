@@ -5,15 +5,15 @@ import { FiGithub } from 'react-icons/fi/index.js';
 import { HOMEPAGE_URL } from '../consts';
 ---
 
-<header class="fixed w-full pq2 z-20 backdrop-blur-md">
+<header class="fixed w-full z-20 backdrop-blur-md">
   <div class="mx-auto max-w-3xl">
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
-        <h2 class="font-semibold tracking-tighter p-2 font-poppins text-lg">
+        <h2 class="font-semibold tracking-tighter p-2 text-lg">
           Nakuya
         </h2>
       </a>
-      <div class="items-center font-poppins gap-6 hidden md:flex">
+      <div class="items-center translate-y-[0.5px] tracking-tighter gap-6 hidden md:flex">
         <HeaderLink href="/about">About</HeaderLink>
         <HeaderLink href="https://github.com/nack098" target="_blank"><FiGithub />Source</HeaderLink>
       </div>
