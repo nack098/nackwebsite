@@ -1,7 +1,7 @@
 ---
 title: 'FormToDocx'
 createdAt: '6 June 2023'
-heroImage: '../../../public/placeholder-hero.jpg'
+heroImage: '/placeholder-hero.jpg'
 description: 'Application turning Google Form Data to Microsoft Word Docx.'
 ---
 

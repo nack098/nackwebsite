@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "types": ["@astrojs/image/client"],
+    "allowJs": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   }
