@@ -30,7 +30,7 @@ const {title, description, heroImage} = Astro.props;
 		<main class="pt-[56px]">
       <Content className="pt-6">
         <div class="mb-8">
-          {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl" width={720} height={360} src={heroImage} alt="" />}
+          {heroImage && <img class="border border-slate-300 dark:border-zinc-700 rounded-xl w-[720px] h-[360px] object-cover" width={720} height={360} src={heroImage} alt="" />}
         </div>
         <h1 class="text-3xl my-1 font-poppins">{title}</h1>
         <div>{description}</div>

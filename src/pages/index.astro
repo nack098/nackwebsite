@@ -23,7 +23,6 @@ const getData = async () => {
 }
 
 const posts = await getData() 
-const blob = await getCollection('posts')
 
 ---
 
@@ -58,7 +57,7 @@ const blob = await getCollection('posts')
                     posts.map(post => (
                       <li class="text-center mb-4">
                         <img
-                          class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+                          class="border border-slate-300 dark:border-zinc-700 rounded-xl object-cover w-[1440] aspect-[2/1]"
                           src={post.data.heroImage}
                           width={720*2}
                           aspectRatio={2.0}
